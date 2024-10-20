@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- libreria de media query -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <!-- libreria de iconos -->
+  <script src="https://kit.fontawesome.com/eb00b890a6.js" crossorigin="anonymous"></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="css.css">
+  <title>Tarea Menu</title>
+</head>
+<body>
+  <header class="header">
+    
+    <nav class="nav">
+      <img src="imagenes/logo_arriba.png" alt="">
+      
+      <div class="icon" id="iconMenu">
+        <i class="fas fa-bars"></i>
+      </div>
+     
+      <ul class="navLis" id="navMenu">
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#">Servicio</a></li>
+        <li><a href="#">Nuestros productos</a></li>
+        <li><a href="#">contactanos</a></li>
+      </ul>
+   
+    </nav>
+
+  </header> 
+
+    <main class="main">
+      <h1>
+        Cultivamos verduras orgánicas y las traemos a tu mesa
+      </h1>
+    </main>
+
+    <div class="content">
+      <h2>Nuestros servicios</h2>
+      <p class="span">Lo que ofrecemos</p> <br> <br>
+
+      <div class="contentCard">
+        <div  class="contentCardSection">
+          <div class="card">
+            <img src="imagenes/icono1.png" alt="">
+            <p class="span">Ganado vacuno</p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. At deleniti, rerum similique debitis labore a incidunt corrupti? 
+            </p>
+          </div>
+          <div class="card">
+            <img src="imagenes/icono2.png" alt="">
+            <p class="span">Productos lacteos</p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. At deleniti, rerum similique debitis labore a incidunt corrupti? 
+            </p>
+          </div>
+          <div class="card">
+            <img src="imagenes/icono3.png" alt="">
+            <p class="span">Frutas de la huerta</p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. At deleniti, rerum similique debitis labore a incidunt corrupti? 
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <img src="imagenes/logo_abajo.png" alt="">
+    </footer>
+
+    <script>
+       $("#iconMenu").click( function () {
+            $("#navMenu").slideToggle();
+        });
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,199 @@
+*{
+  margin: 0px;
+  padding: 0pc;
+  box-sizing: border-box;
+}
+
+:root{
+  --color-primario:#f3f3f3;
+  --color-secundario:#6cb500;
+
+}
+body{
+
+  font-family: "Arimo", sans-serif;
+}
+
+.header {
+  width: 100%;
+  background-color: white;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  padding: 15px 0;
+}
+
+.nav {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.icon {
+  display: none;
+}
+
+.icon i {
+  font-size: 30px;
+  color: #62A80A; 
+  cursor: pointer; 
+}
+
+/* Logo */
+.nav img {
+  width: 200px;
+}
+
+.navLis {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+
+.navLis li a {
+  text-decoration: none;
+  color: black;
+  font-size: 16px;
+}
+
+.navLis li a:hover {
+  transition: color 0.3s ease;
+  color: #62A80A; 
+}
+
+
+
+/*  */
+.main{
+  width: 100%;
+  padding-top: 100px;
+  padding-left: 200px;
+  padding-right: 400px;
+  padding-bottom: 250px;
+  background-image: url(imagenes/foto_slide.jpg);
+}
+.main h1{
+  font-size: 40px;
+  color: white;
+}
+
+.content{
+  width: 100%;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.content  h2  {
+  text-align: center;
+}
+
+
+.span{
+  text-align: center;
+  color: var(--color-secundario);
+  font-size: 20px;
+}
+
+.contentCard{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ 
+}
+
+.contentCardSection{
+  width: 85%;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.card{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  
+  border-radius: 10px;
+  background-color: #d4d4d4;
+  gap: 10px;
+  padding: 20px;
+}
+
+.card img {
+  width: 100px;
+}
+.card p{
+  text-align: center;
+}
+
+/*  */
+.footer{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background-color: var(--color-secundario);
+}
+
+.footer img{
+ width: 200px;
+}
+
+
+/* Responsive  */
+
+@media (max-width: 400px) {
+  
+  .icon {
+    display: block;
+  }
+
+  .navLis {
+    width: 100%;
+    display: none;
+    flex-direction: column;
+
+    position: absolute; 
+    top: 70px; 
+    left: 0;
+    padding: 10px;
+    background-color: white;
+  }
+
+  .navLis li {
+    padding-top: 5px;
+    padding-bottom: 15px;
+    border-bottom: 1px dotted black; 
+    background-color: #c2c2c2;
+  
+  }
+
+  .nav img {
+    width: 150px;
+  }
+ 
+ 
+  .main{
+    
+    padding-top: 80px;
+    padding-left: 20px;
+    padding-right: 10px;
+    padding-bottom: 80px;
+   
+  }
+  .main h1{
+    font-size: 25px;
+   
+  }
+  .contentCardSection{
+    flex-direction: column;
+   
+  }
+  
+}
